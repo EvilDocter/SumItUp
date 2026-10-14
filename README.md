@@ -1,8 +1,5 @@
-# SumItUp - Institutional AI Web & Text Summarizer
+# SumItUp - IAI Web & Text Summarizer
 
-An institutional-grade AI summarization platform powered by Google Gemini (`gemini-3.5-flash-lite`).
-
-SumItUp delivers the **Shazam & Grammarly experience** directly on your Mac:
 1. **🍏 Native macOS Desktop App (`SumItUp.app`)**: A pure native Apple Silicon Cocoa app that floats an interactive Grammarly/Shazam-style AI orb on your screen. Click to summarize active webpages in Chrome, Safari, Brave, Edge, or Arc!
 2. **🌐 Browser Extension (`extension/`)**: Injects the floating AI badge directly onto every website inside Google Chrome, Brave, Arc, or Microsoft Edge.
 3. **📊 Streamlit Dashboard (`text_summarizer.py`)**: Full-screen side-by-side web dashboard for pasting long text and documents.
@@ -32,11 +29,3 @@ For an in-page floating bubble on every website:
 4. Try it on any website or [demo_page.html](file:///Users/mahant/Desktop/SUM-IT-UP/demo_page.html)!
 
 ---
-
-## 3. 📊 Streamlit Web Application
-
-To run the interactive web interface:
-```bash
-source .venv/bin/activate
-streamlit run text_summarizer.py
-```
