@@ -1,43 +1,42 @@
-# AI Text Summarizer
+# SumItUp - Institutional AI Web & Text Summarizer
 
-An AI-powered text summarization application built with Streamlit and Google Gemini (`google-genai`).
+An institutional-grade AI summarization platform powered by Google Gemini (`gemini-3.5-flash-lite`).
 
-## Features
+SumItUp delivers the **Shazam & Grammarly experience** directly on your Mac:
+1. **🍏 Native macOS Desktop App (`SumItUp.app`)**: A pure native Apple Silicon Cocoa app that floats an interactive Grammarly/Shazam-style AI orb on your screen. Click to summarize active webpages in Chrome, Safari, Brave, Edge, or Arc!
+2. **🌐 Browser Extension (`extension/`)**: Injects the floating AI badge directly onto every website inside Google Chrome, Brave, Arc, or Microsoft Edge.
+3. **📊 Streamlit Dashboard (`text_summarizer.py`)**: Full-screen side-by-side web dashboard for pasting long text and documents.
 
-- Summarize long articles, reports, and notes quickly
-- Structured JSON or concise text summarization powered by Gemini 3.5 Flash Lite
-- Interactive Streamlit web interface
+---
 
-## Setup & Installation
+## 1. 🍏 Native macOS Desktop App (Installed on Desktop & Applications)
 
-1. **Clone the repository:**
-   ```bash
-   git clone git@github.com:EvilDocter/AI_text_Summary.git
-   cd AI_text_Summary
-   ```
+Look for **`SumItUp.app`** on your **Desktop (Home screen)** and in `~/Applications`!
 
-2. **Create and activate a virtual environment:**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
+### Features:
+- **Floating AI Orb**: A circular, glowing gradient badge floating in the corner of your screen (draggable anywhere, remembers position).
+- **1-Click Webpage Summarization**: Automatically reads the active tab in **Google Chrome**, **Safari**, **Brave**, **Edge**, or **Arc**.
+- **Clipboard Mode**: Highlight and copy any text anywhere (PDFs, Notes, Slack) and click the orb.
+- **Glassmorphic Card**: Native frosted glass (`NSVisualEffectView`) with **⚡ Overview**, **🎯 Key Points**, **👶 ELI5**, and **🔬 Deep Dive**.
+- **Actions**: One-click **📋 Copy** and native **🔊 Read Aloud** speech.
+- **Right-Click Menu**: Quick access to summarize clipboard, reset position, or quit.
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-4. **Configure Environment Variables:**
-   Copy `.env.example` to `.env` and fill in your Gemini API key:
-   ```bash
-   cp .env.example .env
-   ```
-   Add your Gemini API key:
-   ```env
-   GEMINI_API_KEY=your_gemini_api_key_here
-   ```
+## 2. 🌐 Chrome / Chromium Browser Extension (`extension/`)
 
-5. **Run the Application:**
-   ```bash
-   streamlit run text_summarizer.py
-   ```
+For an in-page floating bubble on every website:
+1. Open `chrome://extensions` (or `brave://extensions` / `edge://extensions`).
+2. Turn **ON** **Developer mode**.
+3. Click **Load unpacked** and select the [`extension/`](file:///Users/mahant/Desktop/SUM-IT-UP/extension) folder.
+4. Try it on any website or [demo_page.html](file:///Users/mahant/Desktop/SUM-IT-UP/demo_page.html)!
+
+---
+
+## 3. 📊 Streamlit Web Application
+
+To run the interactive web interface:
+```bash
+source .venv/bin/activate
+streamlit run text_summarizer.py
+```
